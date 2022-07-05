@@ -35,7 +35,7 @@ jobs:
         run: nuget restore Mod/AspidQueen.csproj
 
       - name: Build project
-        run: dotnet build --configuration Release
+        run: dotnet build Mod/AspidQueen.csproj --configuration Release
 
       - name: Get SHA256 of zipped mod
         id: get_hash
